@@ -1,0 +1,150 @@
+/* Reset Defaults */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* 🔹 Banner Section */
+.Banner {
+    width: 100%;
+    height: auto;
+    background: url('../../assets/food-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+/* 🔹 Scrollable Card Container (Scrollbar Hidden) */
+.CardBox {
+    width: 95%;
+    display: flex;
+    gap: 30px; /* More space between cards */
+    padding: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Ensures cards stay in one row */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    -webkit-overflow-scrolling: touch; /* Better scrolling on mobile */
+    justify-content: flex-start; /* Align items to start */
+}
+
+/* ✅ Hide Scrollbar (But Keep Scrolling) */
+.CardBox::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome, Safari */
+}
+
+.CardBox {
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hides scrollbar in Edge */
+}
+
+/* 🔹 Individual Cards */
+.SetBox {
+    width: 350px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    border-top: 5px solid #007bff;
+    display: inline-block; /* Ensures cards are in a row */
+    white-space: normal; /* Allows text wrapping */
+    flex-shrink: 0; /* Prevents cards from squishing */
+}
+
+/* ✅ Extra Gap Between Cards */
+.SetBox:not(:last-child) {
+    margin-right: 20px; /* Adds more space between cards */
+}
+
+/* ✅ Hover Effect */
+.SetBox:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.3);
+}
+
+/* 🔹 Card Header */
+.Bicard h1 {
+    font-size: 22px;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.Bicard p {
+    font-size: 14px;
+    color: #555;
+    opacity: 0.9;
+    margin-bottom: 5px;
+}
+
+/* 🔹 Booking Section */
+.AboutButton {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* 🔹 Form Styling */
+.FormBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.FormBox label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+.FormBox input,
+.FormBox select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+}
+
+/* 🔹 Booking Button */
+.Button {
+    margin-top: 10px;
+}
+
+.Button button {
+    width: 150px;
+    height: 45px;
+    background:linear-gradient(to right, #56CCF2, #2F80ED);
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.Button button:hover {
+    background: #E94560;
+    color: white;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+    .CardBox {
+        flex-wrap: nowrap; /* Ensures cards remain in a single line */
+        overflow-x: scroll; /* Allow horizontal scrolling */
+    }
+
+    .SetBox {
+        width: 280px; /* Slightly smaller cards for better fit */
+    }
+}

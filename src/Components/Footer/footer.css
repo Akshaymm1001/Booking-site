@@ -1,0 +1,102 @@
+/* 🔹 Footer Section */
+.footer {
+  background: linear-gradient(to right, #56CCF2, #2F80ED); /* Dark to light blue */
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow on top */
+}
+
+/* 🔹 Footer Container */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 🔹 Footer Sections */
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 15px;
+}
+
+/* 🔹 Section Titles (Gold for Elegance) */
+.footer-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFD700; /* Gold */
+  text-shadow: 1px 1px 8px rgba(255, 215, 0, 0.5);
+}
+
+/* 🔹 Section Subtitles */
+.footer-subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #f0f0f0;
+}
+
+/* 🔹 Footer Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  color: #f8f8f8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🔹 Link Hover Effect */
+.footer-links a:hover {
+  color: #FFD700; /* Gold on hover */
+  text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.7);
+}
+
+/* 🔹 Social Media Icons */
+.footer-social {
+  margin-top: 15px;
+}
+
+.social-icon {
+  font-size: 22px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #f0f0f0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🔹 Social Icon Hover Effect */
+.social-icon:hover {
+  color: #FFD700; /* Gold hover effect */
+  transform: scale(1.1);
+}
+
+/* 🔹 Footer Bottom Section */
+.footer-bottom {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #ddd;
+  opacity: 0.8;
+}
+
+/* 🔹 Responsive Footer */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .footer-section {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+}
