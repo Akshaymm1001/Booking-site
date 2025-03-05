@@ -1,5 +1,5 @@
 import axios from "axios";
  const instance = axios.create({
-    baseURL:'http://localhost:1000'
+    baseURL:'https://booking-app-wvuz.onrender.com'
  });
  export default instance
